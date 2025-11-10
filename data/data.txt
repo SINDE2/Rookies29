@@ -1,5 +1,0 @@
-USER ID,
-PassWord,
-Email,
-Name,
-Address
