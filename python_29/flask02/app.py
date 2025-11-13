@@ -6,7 +6,7 @@ from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 
-# ⭐ 한글 폰트 등록 (윈도우 기준 맑은 고딕)
+#한글 폰트 등록 (윈도우 기준 맑은 고딕)
 pdfmetrics.registerFont(
     TTFont('MalgunGothic', r'C:\Windows\Fonts\malgun.ttf')
 )
@@ -111,11 +111,11 @@ def create_pdf_certificate(path, name, course, date):
     c = canvas.Canvas(path, pagesize=A4)
     width, height = A4
 
-    # 🔹 제목
+    # 제목
     c.setFont("MalgunGothic", 28)
     c.drawCentredString(width / 2, height - 120, "수 료 증")
 
-    # 🔹 본문
+    # 본문
     c.setFont("MalgunGothic", 14)
     text_y = height - 200
     c.drawString(80, text_y, f"성    명 : {name}")
