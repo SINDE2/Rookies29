@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수료증 생성</title>
+</head>
+<body>
+    <h2>수료증 정보 입력</h2>
+    <form action="/generate" method="POST">
+        <label>이름:</label><br>
+        <input type="text" name="name" required><br><br>
+
+        <label>과정명:</label><br>
+        <input type="text" name="course" required><br><br>
+
+        <label>수료 날짜:</label><br>
+        <input type="date" name="date" required><br><br>
+
+        <button type="submit">수료증 생성</button>
+    </form>
+</body>
+</html>

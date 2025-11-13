@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FTP 파일 목록</title>
+</head>
+<body>
+    <h2>FTP 서버 파일 목록</h2>
+
+    <ul>
+        {% for f in files %}
+            <li>{{ f }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">로그아웃</a>
+</body>
+</html>

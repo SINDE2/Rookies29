@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>수료증 생성 완료</title>
+</head>
+<body>
+    <h2>수료증 생성 완료</h2>
+
+    <p>{{ name }} 님의 <strong>{{ course }}</strong> 수료증이 생성되었습니다.</p>
+    <p>수료일자: {{ date }}</p>
+
+    <h3>다운로드</h3>
+    <ul>
+        <li><a href="{{ url_for('download_pdf', filename=pdf_filename) }}">PDF 수료증 다운로드</a></li>
+        <li><a href="{{ url_for('download_docx', filename=docx_filename) }}">DOCX 수료증 다운로드 (선택)</a></li>
+    </ul>
+
+    <a href="/">다른 수료증 생성하기</a>
+</body>
+</html>
